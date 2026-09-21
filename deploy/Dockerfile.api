@@ -1,0 +1,27 @@
+# Etapa 1: Construção (Build)
+FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
+WORKDIR /app
+
+COPY src/backend/*.sln ./src/backend/
+COPY src/backend/GestaoMicroestrutural.Api/*.csproj ./src/backend/GestaoMicroestrutural.Api/
+COPY src/backend/GestaoMicroestrutural.Application/*.csproj ./src/backend/GestaoMicroestrutural.Application/
+COPY src/backend/GestaoMicroestrutural.Domain/*.csproj ./src/backend/GestaoMicroestrutural.Domain/
+COPY src/backend/GestaoMicroestrutural.Infrastructure/*.csproj ./src/backend/GestaoMicroestrutural.Infrastructure/
+
+RUN dotnet restore ./src/backend/GestaoMicroestrutural.sln
+
+COPY src/backend/. ./src/backend/
+
+WORKDIR /app/src/backend/GestaoMicroestrutural.Api
+RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
+
+# Etapa 2: Execução (Runtime)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS runtime
+WORKDIR /app
+
+EXPOSE 8080
+ENV ASPNETCORE_URLS=http://+:8080
+
+COPY --from=build /app/publish .
+
+ENTRYPOINT ["dotnet", "GestaoMicroestrutural.Api.dll"]
