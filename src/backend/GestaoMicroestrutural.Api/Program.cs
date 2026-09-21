@@ -5,6 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Adiciona o MediatR escanenando o Assembly da camada Application
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GestaoMicroestrutural.Application.AssemblyReference).Assembly));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
