@@ -46,6 +46,12 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging())
 app.UseHttpsRedirection();
 
 // Mapeia as rotas para as Controllers
+
 app.MapControllers();
+app.MapGet("/", (IWebHostEnvironment env) => new 
+{ 
+    Mensagem = "API Gestão Microestrutural está Online!",
+    AmbienteAtual = env.EnvironmentName 
+});
 
 app.Run();
