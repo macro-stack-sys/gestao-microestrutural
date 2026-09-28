@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/1RSZXwQooc=",
+  "dgSpecHash": "5zNoEseHMFk=",
   "success": true,
   "projectFilePath": "C:\\Users\\Janderson\\Desktop\\Files\\TCC2\\System\\gestao-microestrutural\\src\\backend\\GestaoMicroestrutural.Api\\GestaoMicroestrutural.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Janderson\\.nuget\\packages\\efcore.namingconventions\\8.0.3\\efcore.namingconventions.8.0.3.nupkg.sha512",
     "C:\\Users\\Janderson\\.nuget\\packages\\mediatr\\14.2.0\\mediatr.14.2.0.nupkg.sha512",
     "C:\\Users\\Janderson\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Janderson\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.31\\microsoft.aspnetcore.openapi.8.0.31.nupkg.sha512",
@@ -31,7 +32,7 @@
     "C:\\Users\\Janderson\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\Janderson\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\Janderson\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
-    "C:\\Users\\Janderson\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
+    "C:\\Users\\Janderson\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.2.3\\swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
     "C:\\Users\\Janderson\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.0\\system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512"
   ],
   "logs": []
