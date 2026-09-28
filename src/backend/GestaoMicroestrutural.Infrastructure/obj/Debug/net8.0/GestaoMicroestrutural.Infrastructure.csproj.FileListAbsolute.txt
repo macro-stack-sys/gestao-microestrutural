@@ -14,3 +14,5 @@ C:\Users\Janderson\Desktop\Files\TCC2\System\gestao-microestrutural\src\backend\
 C:\Users\Janderson\Desktop\Files\TCC2\System\gestao-microestrutural\src\backend\GestaoMicroestrutural.Infrastructure\obj\Debug\net8.0\refint\GestaoMicroestrutural.Infrastructure.dll
 C:\Users\Janderson\Desktop\Files\TCC2\System\gestao-microestrutural\src\backend\GestaoMicroestrutural.Infrastructure\obj\Debug\net8.0\GestaoMicroestrutural.Infrastructure.pdb
 C:\Users\Janderson\Desktop\Files\TCC2\System\gestao-microestrutural\src\backend\GestaoMicroestrutural.Infrastructure\obj\Debug\net8.0\ref\GestaoMicroestrutural.Infrastructure.dll
+C:\Users\Janderson\Desktop\Files\TCC2\System\gestao-microestrutural\src\backend\GestaoMicroestrutural.Infrastructure\bin\Debug\net8.0\GestaoMicroestrutural.Infrastructure.runtimeconfig.json
+C:\Users\Janderson\Desktop\Files\TCC2\System\gestao-microestrutural\src\backend\GestaoMicroestrutural.Infrastructure\obj\Debug\net8.0\GestaoMicroestrutural.Infrastructure.genruntimeconfig.cache
