@@ -11,7 +11,7 @@ public class EventStoreDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.HasDefaultSchema("event_store");
+        modelBuilder.HasDefaultSchema("EventStore");
 
         modelBuilder.Entity<EventoAuditoria>().ToTable("EventoAuditoria");
         
