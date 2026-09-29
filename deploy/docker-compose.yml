@@ -12,7 +12,8 @@ services:
       - "${DB_PORT}:5432"
     volumes:
       - gestao-pgdata:/var/lib/postgresql/data
-      - ../scripts/init-eventstore.sql:/docker-entrypoint-initdb.d/init-eventstore.sql
+      - ../scripts/1-init-eventstore.sql:/docker-entrypoint-initdb.d/1-init-eventstore.sql
+      - ../scripts/2-init.sql:/docker-entrypoint-initdb.d/2-init.sql
     restart: unless-stopped
 
   pgadmin:

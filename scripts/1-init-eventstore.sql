@@ -1,6 +1,6 @@
-CREATE SCHEMA IF NOT EXISTS event_store;
+CREATE SCHEMA IF NOT EXISTS "EventStore";
 
-CREATE TABLE IF NOT EXISTS event_store."EventoAuditoria" (
+CREATE TABLE IF NOT EXISTS "EventStore"."EventoAuditoria" (
     "IdTransacao" UUID PRIMARY KEY,
     "AggregateId" UUID NOT NULL,
     "TenantId" VARCHAR(50) NOT NULL,
@@ -10,4 +10,4 @@ CREATE TABLE IF NOT EXISTS event_store."EventoAuditoria" (
     "IdUsuarioResponsavel" UUID NOT NULL
 );
 
-CREATE SCHEMA IF NOT EXISTS read_model;
+CREATE SCHEMA IF NOT EXISTS "ReadModel";
