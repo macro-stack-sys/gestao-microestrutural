@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestaoMicroestrutural.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c7493eef2ce52e84b8af0dbbba6edead414df64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c9fee62136c4eaa0de8ab5c21ff2ee541394373")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestaoMicroestrutural.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestaoMicroestrutural.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
