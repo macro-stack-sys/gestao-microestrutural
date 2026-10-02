@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using GestaoMicroestrutural.Domain.Repositories;
 using GestaoMicroestrutural.Infrastructure.EventStore;
+using GestaoMicroestrutural.Application.Interfaces;
+using GestaoMicroestrutural.Infrastructure.Topologia;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +31,14 @@ builder.Services.AddDbContext<EventStoreDbContext>(options =>
 
 // Injeção do Repositório
 builder.Services.AddScoped<IEventStoreRepository, EventStoreRepository>();
+
+// Injeção do DbContext de Topologia (CRUD Espacial e Insumos)
+builder.Services.AddDbContext<TopologiaDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Mapeamento da Interface abstrata
+builder.Services.AddScoped<ITopologiaDbContext>(provider => 
+    provider.GetRequiredService<TopologiaDbContext>());
 
 var app = builder.Build();
 

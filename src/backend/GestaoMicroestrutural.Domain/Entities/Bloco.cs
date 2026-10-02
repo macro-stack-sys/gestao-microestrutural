@@ -3,7 +3,7 @@ namespace GestaoMicroestrutural.Domain.Entities;
 public class Bloco
 {
     public Guid Id { get; private set; }
-    public string Nome { get; private set; }
+    public string Nome { get; private set; } = null!;
     public string? Descricao { get; private set; }
 
     private readonly List<Sala> _salas = new();

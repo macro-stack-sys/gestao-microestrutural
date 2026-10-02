@@ -1,6 +1,6 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using GestaoMicroestrutural.Application.Commands.RegistrarAtivo;
+using GestaoMicroestrutural.Application.Commands.Ativos;
 
 namespace GestaoMicroestrutural.Api.Controllers;
 

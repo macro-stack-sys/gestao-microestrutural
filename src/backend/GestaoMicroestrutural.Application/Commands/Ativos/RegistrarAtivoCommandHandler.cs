@@ -3,7 +3,7 @@ using System.Text.Json;
 using GestaoMicroestrutural.Domain.Events;
 using GestaoMicroestrutural.Domain.Repositories;
 
-namespace GestaoMicroestrutural.Application.Commands.RegistrarAtivo;
+namespace GestaoMicroestrutural.Application.Commands.Ativos;
 
 public class RegistrarAtivoCommandHandler : IRequestHandler<RegistrarAtivoCommand, Guid>
 {

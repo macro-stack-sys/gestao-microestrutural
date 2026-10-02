@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace GestaoMicroestrutural.Application.Commands.RegistrarAtivo;
+namespace GestaoMicroestrutural.Application.Commands.Ativos;
 
 public class RegistrarAtivoCommand : IRequest<Guid>
 {

@@ -13,6 +13,7 @@
           "GestaoMicroestrutural.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.31",
           "Microsoft.OpenApi": "1.6.30",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.11",
           "Swashbuckle.AspNetCore": "6.6.2",
           "Swashbuckle.AspNetCore.SwaggerUI": "10.2.3"
         },
@@ -308,7 +309,8 @@
       "GestaoMicroestrutural.Application/1.0.0": {
         "dependencies": {
           "GestaoMicroestrutural.Domain": "1.0.0",
-          "MediatR": "14.2.0"
+          "MediatR": "14.2.0",
+          "Microsoft.EntityFrameworkCore": "8.0.31"
         },
         "runtime": {
           "GestaoMicroestrutural.Application.dll": {
@@ -327,6 +329,7 @@
       },
       "GestaoMicroestrutural.Infrastructure/1.0.0": {
         "dependencies": {
+          "GestaoMicroestrutural.Application": "1.0.0",
           "GestaoMicroestrutural.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.31",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.31",

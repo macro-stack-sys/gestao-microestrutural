@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using GestaoMicroestrutural.Domain.Entities;
+using GestaoMicroestrutural.Application.Interfaces;
 
 namespace GestaoMicroestrutural.Infrastructure.Topologia;
 
-public class TopologiaDbContext : DbContext
+public class TopologiaDbContext : DbContext, ITopologiaDbContext
 {
     public TopologiaDbContext(DbContextOptions<TopologiaDbContext> options) : base(options) { }
     

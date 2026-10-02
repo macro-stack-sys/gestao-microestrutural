@@ -4,10 +4,10 @@ public class Sala
 {
     public Guid Id { get; private set; }
     public Guid BlocoId { get; private set; }
-    public string Nome { get; private set; }
+    public string Nome { get; private set; } = null!;
     public string? Tipo { get; private set; }
     
-    public virtual Bloco Bloco { get; private set; }
+    public Bloco Bloco { get; private set; } = null!;
 
     protected Sala() { }
 

@@ -3,8 +3,8 @@ namespace GestaoMicroestrutural.Domain.Entities;
 public class Insumo
 {
     public Guid Id { get; private set; }
-    public string Nome { get; private set; }
-    public string UnidadeMedida { get; private set; }
+    public string Nome { get; private set; } = null!;
+    public string UnidadeMedida { get; private set; } = null!;
     public decimal QuantidadeDisponivel { get; private set; }
     public decimal EstoqueMinimo { get; private set; }
 
