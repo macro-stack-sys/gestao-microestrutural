@@ -1,22 +1,21 @@
 namespace GestaoMicroestrutural.Domain.Entities;
 
-public class Insumo
+public class Insumo : AtivoFisico
 {
-    public Guid Id { get; private set; }
-    public string Nome { get; private set; } = null!;
+    public string Tipo { get; private set; } = null!;
     public string UnidadeMedida { get; private set; } = null!;
     public decimal QuantidadeDisponivel { get; private set; }
     public decimal EstoqueMinimo { get; private set; }
 
     protected Insumo() { }
 
-    public Insumo(string nome, string unidadeMedida, decimal estoqueMinimo)
+    public Insumo(string tipo, string descricao, string unidadeMedida, decimal estoqueMinimo, string tenantId)
+    : base(Guid.NewGuid(), tenantId, NaturezaAtivo.Consumo, descricao)
     {
-        Id = Guid.NewGuid();
-        Nome = nome;
+        Tipo = tipo;
         UnidadeMedida = unidadeMedida;
-        QuantidadeDisponivel = 0;
         EstoqueMinimo = estoqueMinimo;
+        QuantidadeDisponivel = 0;
     }
     
     public void RealizarBaixa(decimal quantidade)

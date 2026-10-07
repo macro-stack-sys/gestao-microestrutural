@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
               "C:\\Users\\Janderson\\Desktop\\Files\\TCC2\\System\\gestao-microestrutural\\src\\backend\\GestaoMicroestrutural.Application\\GestaoMicroestrutural.Application.csproj": {
@@ -48,6 +49,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "EFCore.NamingConventions": {
@@ -118,6 +120,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
               "C:\\Users\\Janderson\\Desktop\\Files\\TCC2\\System\\gestao-microestrutural\\src\\backend\\GestaoMicroestrutural.Domain\\GestaoMicroestrutural.Domain.csproj": {
@@ -139,6 +142,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "MediatR": {
@@ -190,6 +194,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -207,6 +212,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "imports": [
             "net461",
@@ -248,6 +254,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
               "C:\\Users\\Janderson\\Desktop\\Files\\TCC2\\System\\gestao-microestrutural\\src\\backend\\GestaoMicroestrutural.Application\\GestaoMicroestrutural.Application.csproj": {
@@ -272,6 +279,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
