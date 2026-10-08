@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\GestaoMicroestrutural.Api.props" />
-</Project>

@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GestaoMicroestrutural.Domain\GestaoMicroestrutural.Domain.csproj" />
+    <ProjectReference Include="..\GestaoMicroestrutural.Application\GestaoMicroestrutural.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
