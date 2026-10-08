@@ -11,7 +11,13 @@ public class CadastrarInsumoCommandHandler : IRequestHandler<CadastrarInsumoComm
 
     public async Task<Guid> Handle(CadastrarInsumoCommand request, CancellationToken cancellationToken)
     {
-        var insumo = new Insumo(request.Nome, request.UnidadeMedida, request.EstoqueMinimo);
+        var insumo = new Insumo(
+            tipo: request.Tipo,
+            descricao: request.Descricao,
+            unidadeMedida: request.UnidadeMedida,
+            estoqueMinimo: request.EstoqueMinimo,
+            tenantId: request.TenantId
+        );
         _context.Insumos.Add(insumo);
         await _context.SaveChangesAsync(cancellationToken);
         return insumo.Id;
